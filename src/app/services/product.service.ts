@@ -12,17 +12,16 @@ export class ProductService {
 
   private readonly apiMock: string = "/assets/mock/db.json";
   // private readonly apiDev: string = `${environmentDev.apiUrl}`;
-  // private readonly apiUrl: string = `${environment.apiUrl}/api`
-  private readonly apiUrl: string = `https://tepoly-de-teste.onrender.com/api`
+  private readonly apiUrl: string = `${environment.apiUrl}/product`
 
   constructor(private http: HttpClient) { }
 
   getAllProducts():Observable<Product[]>{
-    return this.http.get<Product[]>(`${this.apiUrl}/product`);
+    return this.http.get<Product[]>(`${this.apiUrl}`);
   }
   
   getProductById(id: number | string): Observable<Product>{
-    return this.http.get<Product>(`${this.apiUrl}/product/${id}`)
+    return this.http.get<Product>(`${this.apiUrl}/${id}`)
   }
 
   private setPurchaseDate(): Date{
@@ -33,7 +32,7 @@ export class ProductService {
 
   AddProduct(product: Product):Observable<Product>{
     product.purchaseDate = this.setPurchaseDate().toLocaleString('pt-BR'); 
-    return this.http.post<Product>(`${this.apiUrl}/new-product`, product);
+    return this.http.post<Product>(`${this.apiUrl}`, product);
     
   }
 }
