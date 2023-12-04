@@ -12,7 +12,8 @@ export class ProductService {
 
   private readonly apiMock: string = "/assets/mock/db.json";
   // private readonly apiDev: string = `${environmentDev.apiUrl}`;
-  private readonly apiUrl: string = `${environment.apiUrl}`
+  // private readonly apiUrl: string = `${environment.apiUrl}/api`
+  private readonly apiUrl: string = `https://tepoly-de-teste.onrender.com/api`
 
   constructor(private http: HttpClient) { }
 
