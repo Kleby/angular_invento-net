@@ -2,8 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Product } from '../models/Product.interface';
-import { environmentDev } from 'src/environments/environment.development';
-import { environment } from 'src/environments/environment';
+// import { environmentDev } from '../../environments/environment.development';
+import { environment } from 'src/environments/environment'; 
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment';
 export class ProductService {
 
   private readonly apiMock: string = "/assets/mock/db.json";
-  private readonly apiDev: string = `${environmentDev.apiUrl}`;
+  // private readonly apiDev: string = `${environmentDev.apiUrl}`;
   private readonly apiUrl: string = `${environment.apiUrl}`
 
   constructor(private http: HttpClient) { }
