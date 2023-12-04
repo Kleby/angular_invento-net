@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Feijão",
+        "code": "0023",
+        "purchaseDate": "22/07/2023 14:00",
+        "expirationDate": "12-12-2023",
+        "stock": 22,
+        "price": "5.45"
+    },
+    {
+        "id": 2,
+        "name": "Arroz",
+        "code": "0005",
+        "purchaseDate": "01/10/2023 13:45",
+        "expirationDate": "01-23-2024",
+        "stock": 7,
+        "price": "6.25"
+    },
+    {
+        "id": 3,
+        "name": "Tomate",
+        "code": "0243",
+        "purchaseDate": "02/09/2023 09:30",
+        "expirationDate": "06-02-2024",
+        "stock": 15,
+        "price": "2.25"
+    }
+]
