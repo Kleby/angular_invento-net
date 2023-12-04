@@ -1,0 +1,39 @@
+.app__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+header, footer{
+    width: 100%;
+    height: 4.25rem;
+    box-shadow: 0 0 4px var(--text-color);
+    background-color: var(--bg-color);
+    display: flex;
+    padding: 0 1rem;
+}
+
+.app-brand__content{
+    display: flex;
+    padding: 1rem 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+.app-brand{
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.main__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,42 @@
+.btn-icon__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: .25rem;
+    border: 1px solid #000;
+
+}
+
+
+.material-symbols-outlined{
+    font-size: 1.5rem;
+    padding: 0;
+    display: flex;
+}
+
+.delete{
+    color: #e2e2e2;
+}
+.delete:hover{
+    color: #aca5a5;
+}
+
+.add_box{
+    color: #f4be47;
+}
+.add_box:hover{
+    color: #a08a58;
+}
+
+.add_box, .delete{
+    transition: 400ms;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.icon-label{
+    cursor: pointer;
+    color: #f3f3f3;
+}

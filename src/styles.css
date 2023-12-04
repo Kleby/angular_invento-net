@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #8964f1;
+    --secondary-color: #49bca0;
+    --text-color: #353938;
+    --bg-color: #f6f5f4;
+}
+
+body{
+    font-family: 'Gabarito', sans-serif;
+}

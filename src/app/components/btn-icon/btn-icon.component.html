@@ -1,0 +1,8 @@
+<div class="btn-icon__container">
+    <button [classList]="iconName" [title]="iconTitle" [id]="iconName+'-'+iconId">
+        <i class="material-symbols-outlined">
+            {{iconName}}
+        </i>
+    </button>
+    <label [for]="iconName+'-'+iconId" class="icon-label">{{labelText}}</label>
+</div>

@@ -1,0 +1,39 @@
+<nav class="menu__container">
+    <div class="btn-menu__container">
+        <button class="btn-menu__mobile">
+            <span class="material-symbols-outlined open">
+                menu
+            </span>
+            <span class="material-symbols-outlined close">
+                close
+            </span>
+        </button>
+    </div>
+    <ul class="menu-items">
+        <li class="item">
+            <a routerLink="/" class="item-link" routerLinkActive="page-activated"  [routerLinkActiveOptions]={exact:true}>
+                Home
+                <span class="material-symbols-outlined">
+                    home
+                </span>
+
+            </a>
+        </li>
+        <li class="item">
+            <a routerLink="/register" class="item-link" routerLinkActive="page-activated">
+                Cadastrar
+                <span class="material-symbols-outlined">
+                    note_add
+                </span>
+            </a>
+        </li>
+        <li class="item">
+            <a routerLink="/contact" class="item-link" routerLinkActive="page-activated">
+                Contato
+                <span class="material-symbols-outlined">
+                    contact_page
+                </span>
+            </a>
+        </li>
+    </ul>
+</nav>

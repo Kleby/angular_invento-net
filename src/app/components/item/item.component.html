@@ -1,0 +1,15 @@
+<div class="item__container">
+    <p class="item">{{product.id}}</p>
+    <p class="item">{{product.name}}</p>
+    <p class="item">{{product.price + '' | convertToBr}}</p>
+    <p class="item">{{product.code | addZero}}</p>
+    <p class="item">{{product.purchaseDate}}</p>
+    <p class="item">{{product.expirationDate | date : 'dd/MM/yyyy'}}</p>
+    <p class="item">{{product.stock | addZero}}</p>
+    <div>
+        <app-btn-icon iconName="add_box" labelText="Comprar" iconTitle="Comprar mais" [iconId]="itemId" />
+    </div>
+</div>
+
+<!-- Falta fazer a lógica para adicionar css quando estiver próximo de expirar ou quase sem estoque -->
+<!-- Lembrar:  expirar > estoque -->

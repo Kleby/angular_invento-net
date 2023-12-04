@@ -1,0 +1,34 @@
+.item__container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+
+.item {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    border: 1px solid #000;
+}
+
+.item:nth-child(2n){
+    background-color: #cbded8; 
+}
+.item:nth-child(2n + 1){
+    background-color: #c7d3da; 
+    color: #0c0808;
+}
+
+.item__container.to-expiration > .item{
+    background-color: #ec7b7b;
+}
+
+.item__container.item__container.low-stock > .item{
+    background-color: #99a46a;
+}

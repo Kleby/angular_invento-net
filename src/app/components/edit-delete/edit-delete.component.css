@@ -1,0 +1,8 @@
+.edit-delete__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    background-color: darkgreen;
+    margin: .25rem; 
+}

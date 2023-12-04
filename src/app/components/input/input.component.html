@@ -1,0 +1,21 @@
+<div class="input__container">
+    <label [for]="idInput" class="input-label">{{labelText}}</label>
+    <input 
+        [type]="typeInput" 
+        [id]="idInput" 
+        [placeholder]="placeholderInput" 
+        class="input-content"
+        [formControl]="controlName"
+        (change)="onChangeDate($event)"
+    >
+    <div *ngIf="isValidDate || isError" class="danger">
+        <div *ngIf="isError">
+            <small *ngIf="controlName?.errors?.required">
+                Campo Obrigatório
+            </small>
+        </div>
+        <small *ngIf="isValidDate" >
+            {{messageError}}
+        </small>
+    </div>
+</div>

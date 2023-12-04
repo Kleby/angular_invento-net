@@ -1,0 +1,47 @@
+<form class="form__container" [formGroup]="formRegister" (ngSubmit)="onSubmit()">
+    <h1 class="form__title">Lista de Compras</h1>
+    <div class="form__content">
+        <app-input class="form__group" 
+            labelText="Nome:"
+            typeInput="text"
+            placeholderInput="Feijão"
+            idInput="name"
+            [controlName]="formRegister.get('name')"
+        />
+        <app-input class="form__group" 
+            labelText="Código:"
+            typeInput="number"
+            placeholderInput="23"
+            idInput="code"
+            [controlName]="formRegister.get('code')"
+        />
+
+        <app-input class="form__group" 
+            labelText="Preço:" 
+            typeInput="text"
+            placeholderInput="22,25"
+            idInput="price"
+            [controlName]="formRegister.get('price')"
+
+        />
+
+        <app-input class="form__group" 
+            labelText="Data de Validade:"
+            typeInput="date"
+            idInput="expirationDate" 
+            [controlName]="formRegister.get('expirationDate')"
+            (dateFormatBr)="onChangeDate($event)"
+            messageError="Data de validade inválida"
+        />
+
+        <app-input class="form__group" 
+            labelText="Quantidade:" 
+            typeInput="number"
+            placeholderInput="32"
+            idInput="quantity"
+            [controlName]="formRegister.get('stock')"
+        />
+    </div>
+
+    <app-button (submitEmmiter)="onSubmit" class="btn-submit"/>
+</form>

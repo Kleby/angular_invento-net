@@ -1,0 +1,22 @@
+.btn__submit{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+
+    padding: 1rem 1.5em;
+    font-size: 1.05rem;
+
+    border-radius: 2rem;
+    margin-top: 1rem;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    font-weight: 600;
+    transition-duration: 400ms;
+    cursor: pointer;
+}
+
+.btn__submit:hover{
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
