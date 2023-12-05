@@ -11,23 +11,18 @@
     margin: 1rem 0;
 }
 
-.product__container{
-    background-color: #373a87;
-}
-
 .product__header{
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    border: 1px solid #000;
     border-bottom: none;
 }
 .item.item__header{
-    background-color: #43436b;
     height: 100%;
-    color: #f3f3f3;
     font-size: 1.1rem;  
     font-weight: 500;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
 }
 
 

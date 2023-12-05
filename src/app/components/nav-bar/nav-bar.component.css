@@ -25,7 +25,7 @@
 
 .item-link{
     padding: .5rem 1rem;
-    background: var(--text-color);
+    background: var(--primary-color);
     cursor: pointer;
     border-radius: .5rem;
     color: var(--bg-color);
@@ -41,12 +41,13 @@
 }
 
 .item-link:hover{
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--bg-color);
+    border-color: var(--secondary-color);
 }
 
 .item > .page-activated{
-    border-color: var(--text-color);
+    border-color: var(--primary-color);
     background-color: var(--bg-color);
-    color: var(--text-color);
+    color: var(--primary-color);
 }

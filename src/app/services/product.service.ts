@@ -3,16 +3,16 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Product } from '../models/Product.interface';
 // import { environmentDev } from '../../environments/environment.development';
-import { environment } from 'src/environments/environment'; 
+// import { environmentDev } from 'src/environments/environment.development';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  private readonly apiMock: string = "/assets/mock/db.json";
-  // private readonly apiDev: string = `${environmentDev.apiUrl}`;
-  private readonly apiUrl: string = `${environment.apiUrl}/product`
+  private readonly apiUrl: string = "/assets/mock/db.json";
+  // private readonly apiUrl: string = `${environmentDev.apiUrl}`;
+  // private readonly apiUrl: string = `${environment.apiUrl}/product`
 
   constructor(private http: HttpClient) { }
 

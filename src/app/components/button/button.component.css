@@ -9,14 +9,14 @@
 
     border-radius: 2rem;
     margin-top: 1rem;
-    background-color: var(--tertiary-color);
-    color: var(--secondary-color);
+    background-color: var(--text-color);
+    color: var(--bg-color);
     font-weight: 600;
     transition-duration: 400ms;
     cursor: pointer;
 }
 
 .btn__submit:hover{
-    background-color: var(--secondary-color);
-    color: var(--tertiary-color);
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
 }

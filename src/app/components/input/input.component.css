@@ -8,11 +8,12 @@
     height: 100%;
     width: 100%;
     padding: .5rem 1rem;
+    background-color: transparent;
 }
 
 .input-label{
     font-size: 1.25rem;
-    color: var(--text-color);
+    color: var(--primary-color);
     font-weight: 600;
 }
 
@@ -20,18 +21,19 @@
     border: none;
     outline: none;
     background-color: var(--text-color);
-    color: var(--secondary-color);
+    color: var(--primary-color);
     padding: .5rem .75rem;
     border-radius: .25rem;
     font-size: 1rem;
     appearance: none;
+    font-weight: 500;
 }
 
 .input-content::placeholder{
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .danger{
-    color: #f00;
+    color: #a61c06; 
     font-weight: 600;
 }

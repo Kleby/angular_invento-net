@@ -8,21 +8,20 @@
 
 
 .item {
-    padding: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     height: 100%;
     border: 1px solid #000;
+    color: var(--bg-color);
 }
 
 .item:nth-child(2n){
-    background-color: #cbded8; 
+    background-color: var(--secondary-color); 
 }
 .item:nth-child(2n + 1){
-    background-color: #c7d3da; 
-    color: #0c0808;
+    background-color: var(--tertiary-color); 
 }
 
 .item__container.to-expiration > .item{
@@ -30,5 +29,5 @@
 }
 
 .item__container.item__container.low-stock > .item{
-    background-color: #99a46a;
+    background-color: #6a85a4;
 }
